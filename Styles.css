@@ -1,9 +1,13 @@
-<style>
             body{background-color: azure;}
             h1{color: #000;}
+
             .container {background-color: aqua;
-            height: 100px;
-            width: 100px;
+            height: 10rem;
+            width: 10rem;
+        }
+        .container1 { text-align: left;
+            text-transform: uppercase;
+            color: #a71616;
         }
 
-        </style> 
+      
