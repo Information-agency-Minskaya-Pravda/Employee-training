@@ -1,8 +1,18 @@
            
+            header h1{
+            color: aliceblue;
+            }
+            header h2{
+                color: aliceblue;
+             }
+               
+           header{
+            background-color: darkslategray
+           }
            body{background-color: azure;}
 
             h1{color: #000;}
-            
+
             .container {background-color: aqua;
             height: 10rem;
             width: 10rem;
