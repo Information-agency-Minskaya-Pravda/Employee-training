@@ -15,19 +15,24 @@
             h1{color: #000;}
 
             .container {background-color: aqua;
-            height: 10rem;
-            width: 10rem;                    
+            height: 12rem;
+            width: 12rem;   
+            border-width: 2px;
+            border-color: darkslategrey;
+            border-style: solid;
+            padding: 3px;
+            margin: 5rem;                 
            }
            footer{
             background-color: darkslategray
            }
-           body p{
+           .center{
             text-align: center;
             padding-left: 20rem;
             padding-right: 20rem;
            }
            .container2{
-            text-align: left;
+            text-align: right;
            }
            .highlight{
             text-transform: uppercase;
@@ -35,6 +40,16 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-weight: bold;
            }
-
+           a:link {
+            color:#000 ;
+           }
+           a:active {color: aquamarine;
+           }
+           a:hover {
+            color: rgb(0, 255, 0)
+           }
+           a:visited {
+            color: blueviolet;
+           }
                
           
