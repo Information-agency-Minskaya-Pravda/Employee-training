@@ -15,9 +15,22 @@
 
             .container {background-color: aqua;
             height: 10rem;
-            width: 10rem;
-           
-            
-        }
+            width: 10rem;                    
+           }
+           footer{
+            background-color: darkslategray
+           }
+           body p{
+            text-align: center;
+            padding-left: 20rem;
+            padding-right: 20rem;
+           }
+           .container2{
+            text-align: left;
+           }
 
-      
+           footer{
+            
+           }
+           body{height: 100%;
+          }
