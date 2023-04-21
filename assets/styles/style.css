@@ -9,28 +9,33 @@
            header{
             
            }
+           html,
            body{background-color: azure;
             height: 100%;
           }
 
-            .container {background-color: aqua;
-            height: 12rem;
-            width: 12rem;   
+            .container {
+            text-align: center;
+            display: block;
+            background-color: aqua;
+            height: 15rem;
+            width: 15rem;   
             border-width: 2px;
             border-color: darkslategrey;
             border-style: solid;
             padding: 3px;
-            margin: 5rem;                 
+            margin: auto;   
            }
            footer {
+            flex: 0 0 auto;
            }
            .center{
-            text-align:start;
+            text-align:center;
             padding-left: 20rem;
             padding-right: 20rem;
            }
            .container2{
-            text-align: right;
+            text-align: center;
            }
            .highlight{
             text-transform: uppercase;
@@ -50,15 +55,32 @@
             color: blueviolet;
            }
            .pageheader {
+            flex: 0 0 auto;
             background-color: darkslategray;
             color: aliceblue;
            }    
            .pagefooter {
+            flex: 0 0 auto;
             background-color: darkslategray;
             color: aliceblue;
            }
           .pageimage {
-            margin: 1px;
-            padding-left: 10rem;
-            padding-right: 10rem;
+            display: block;
+            margin: auto;
+            padding: 1rem;
+            float: left;
+
           }
+          .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+          }
+
+          * {
+            margin: 0;
+            padding: 0;}
+            
+            .content {
+              flex: 1 0 auto;
+            }
