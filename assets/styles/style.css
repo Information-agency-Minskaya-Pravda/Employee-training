@@ -1,86 +1,95 @@
-           
-            header h1{
-            
-            }
-            header h2{
-                
-             }
-               
-           header{
-            
-           }
-           html,
-           body{background-color: azure;
-            height: 100%;
-          }
+header h1 {
+}
+header h2 {
+}
 
-            .container {
-            text-align: center;
-            display: block;
-            background-color: aqua;
-            height: 15rem;
-            width: 15rem;   
-            border-width: 2px;
-            border-color: darkslategrey;
-            border-style: solid;
-            padding: 3px;
-            margin: auto;   
-           }
-           footer {
-            flex: 0 0 auto;
-           }
-           .center{
-            text-align:center;
-            padding-left: 20rem;
-            padding-right: 20rem;
-           }
-           .container2{
-            text-align: center;
-           }
-           .highlight{
-            text-transform: uppercase;
-            color: darkslategray;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-weight: bold;
-           }
-           a:link {
-            color:#000 ;
-           }
-           a:active {color: aquamarine;
-           }
-           a:hover {
-            color: rgb(0, 255, 0)
-           }
-           a:visited {
-            color: blueviolet;
-           }
-           .pageheader {
-            flex: 0 0 auto;
-            background-color: darkslategray;
-            color: aliceblue;
-           }    
-           .pagefooter {
-            flex: 0 0 auto;
-            background-color: darkslategray;
-            color: aliceblue;
-           }
-          .pageimage {
-            display: block;
-            margin: auto;
-            padding: 1rem;
-            float: left;
+header {
+}
+html,
+body {
+  background-color: azure;
+  height: 100%;
+}
 
-          }
-          .wrapper {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-          }
+.container {
+  text-align: center;
+  display: block;
+  background-color: aqua;
+  height: 15rem;
+  width: 15rem;
+  border-width: 2px;
+  border-color: darkslategrey;
+  border-style: solid;
+  padding: 3px;
+  margin: auto;
+}
+footer {
+  flex: 0 0 auto;
+}
+.center {
+  text-align: center;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+.container2 {
+  text-align: center;
+}
+.highlight {
+  text-transform: uppercase;
+  color: darkslategray;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+a:link {
+  color: #000;
+}
+a:active {
+  color: rgb(255, 255, 255);
+}
+a:hover {
+  color: rgb(0, 255, 0);
+}
+a:visited {
+  color: rgb(132, 159, 141);
+}
+.pageheader {
+  flex: 0 0 auto;
+  background-color: darkslategray;
+  color: aliceblue;
+}
+.pagefooter {
+  flex: 0 0 auto;
+  background-color: darkslategray;
+  color: aliceblue;
+}
+.pageimage {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  float: left;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-          * {
-            margin: 0;
-            padding: 0;}
-            
-            .content {
-              flex: 1 0 auto;
-            }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+.down {
+  text-align: right;
+}
+.video {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
