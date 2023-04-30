@@ -4,3 +4,14 @@
 .carousel-item img{
   height: 600px;
 }
+.block3{
+  float:left;
+  margin: 2px;
+  height: 400px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  
+} 
