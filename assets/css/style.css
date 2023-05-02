@@ -16,15 +16,19 @@
   
 } 
 html,
-body{
-height: 100%;
+body {
+  height: 100%;
 }
-.wrapper{
-  min-height: 100%;
+.wrapper {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .main{
   padding: 30px;
 flex: 1 1 auto;
+}
+*{
+  margin: 0;
+  padding: 0;
 }
