@@ -15,6 +15,7 @@
   height: auto;
   
 } 
+html,
 body{
 height: 100%;
 }
@@ -24,5 +25,6 @@ height: 100%;
   flex-direction: column;
 }
 .main{
+  padding: 30px;
 flex: 1 1 auto;
 }
