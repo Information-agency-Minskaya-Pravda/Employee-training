@@ -35,4 +35,10 @@ flex: 1 1 auto;
 .footer {
   flex: 0 0 auto;
 }
-	
+	.contentslide{
+    margin: auto;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  }
