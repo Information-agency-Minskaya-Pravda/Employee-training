@@ -1,12 +1,4 @@
-$('.one-time').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true
-  }); 
-
-  $(".responsive").slick({
+$(".responsive").slick({
     dots: true,
     infinite: false,
     speed: 500,

@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   height: 100%;
 }
-.main{
+main{
   padding: 30px;
 flex: 1 1 auto;
 }
@@ -32,13 +32,13 @@ flex: 1 1 auto;
   margin: 0;
   padding: 0;
 }
-.footer {
+footer {
   flex: 0 0 auto;
 }
 	.contentslide{
     margin: auto;
   padding: 30px;
   width: 100%;
-  max-width: 600px;
+  max-width: auto;
   box-sizing: border-box;
   }
