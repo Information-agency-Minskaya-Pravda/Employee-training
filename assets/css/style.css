@@ -42,3 +42,9 @@ footer {
   max-width: auto;
   box-sizing: border-box;
   }
+  .imgfill {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+
+  }
