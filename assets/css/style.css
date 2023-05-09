@@ -1,11 +1,11 @@
-.carousel-item{
+.carousel-item {
   height: 600px;
 }
-.carousel-item img{
+.carousel-item img {
   height: 600px;
 }
-.block3{
-  float:left;
+.block3 {
+  float: left;
   margin: 2px;
   height: 400px;
 }
@@ -13,8 +13,7 @@
 .img-fluid {
   max-width: 100%;
   height: auto;
-  
-} 
+}
 html,
 body {
   height: 100%;
@@ -24,27 +23,125 @@ body {
   flex-direction: column;
   height: 100%;
 }
-main{
+main {
   padding: 30px;
-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
-*{
+* {
   margin: 0;
   padding: 0;
 }
 footer {
   flex: 0 0 auto;
 }
-	.contentslide{
-    margin: auto;
+.contentslide {
+  margin: auto;
   padding: 30px;
   width: 100%;
   max-width: auto;
   box-sizing: border-box;
-  }
-  .imgfill {
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
+}
+.imgfill {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+.mid-block-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+.mid-block-button {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px 30px;
+  gap: 10px;
+  background: #ec1b2e;
+  color: aliceblue;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.mid-block-h3 {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  /* or 34px */
 
-  }
+  text-align: center;
+  margin: 20px;
+
+  /* black */
+
+  color: #333333;
+}
+
+.mid-block-h2 {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 140%;
+  /* or 67px */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  /* black */
+
+  color: #333333;
+  margin: 80px;
+}
+.mid-low-block-h3 {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  /* or 34px */
+
+  text-align: start;
+  margin: 30px;
+
+  /* black */
+
+  color: #333333;
+}
+.mid-low-block-button {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px 30px;
+  gap: 10px;
+  background: #ec1b2e;
+  color: aliceblue;
+  font-weight: 500;
+  margin: 30px;
+}
+
+.mid-low-block-p {
+  margin: 30px;
+}
+.low-block-h3 {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  /* or 34px */
+
+  /* black */
+
+  color: #333333;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.low-block-p {
+  margin: 25px 0px 35px 0px;
+}
+
