@@ -42,9 +42,9 @@ footer {
   box-sizing: border-box;
 }
 .imgfill {
-  height: 600px;
+  display: block;
   width: 100%;
-  object-fit: cover;
+  margin: 0px auto;
 }
 .mid-block-div {
   display: flex;
@@ -121,7 +121,6 @@ footer {
   color: aliceblue;
   font-weight: 500;
   margin: 30px;
-  
 }
 
 .mid-low-block-p {
@@ -162,20 +161,51 @@ footer {
   font-weight: 500;
   margin: 30px;
 }
-.tbl-block li{
+.tbl-block li {
   list-style-type: none; /* Убираем маркеры */
 }
 .tbl-block th {
   background-color: rgb(228, 227, 227);
 }
-.tbl-info{
+.tbl-info {
   height: 1076px;
   width: 100%;
   padding: 5px 10px;
   table-layout: fixed;
-  border-top:none;
+  border-top: none;
 }
-.tbl-info td{
+.tbl-info td {
   border-bottom: 2px solid rgb(201, 201, 201);
-
+}
+.tbl-block {
+  margin-top: 200px;
+}
+.img-block {
+  position: absolute;
+  top: 400px;
+  left: 300px;
+}
+.img-h1 {
+  box-shadow: #333333;
+  text-align: start;
+  color: white;
+  background-color: #333333;
+  opacity: 0.7;
+}
+.img-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px 30px;
+  gap: 10px;
+  position: absolute;
+  background: #ec1b2e;
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  border: none;
+  color: #ffffff;
+  margin-top: 30px;
 }
