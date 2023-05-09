@@ -121,6 +121,7 @@ footer {
   color: aliceblue;
   font-weight: 500;
   margin: 30px;
+  
 }
 
 .mid-low-block-p {
@@ -145,3 +146,36 @@ footer {
   margin: 25px 0px 35px 0px;
 }
 
+.hbox {
+  display: table-cell;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: left;
+  border: none;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px 30px;
+  gap: 10px;
+  background: #ec1b2e;
+  color: aliceblue;
+  font-weight: 500;
+  margin: 30px;
+}
+.tbl-block li{
+  list-style-type: none; /* Убираем маркеры */
+}
+.tbl-block th {
+  background-color: rgb(228, 227, 227);
+}
+.tbl-info{
+  height: 1076px;
+  width: 100%;
+  padding: 5px 10px;
+  table-layout: fixed;
+  border-top:none;
+}
+.tbl-info td{
+  border-bottom: 2px solid rgb(201, 201, 201);
+
+}
