@@ -191,6 +191,8 @@ footer {
   color: white;
   background-color: #333333;
   opacity: 0.7;
+  padding: 15px;
+
 }
 .img-button {
   display: flex;
@@ -208,4 +210,21 @@ footer {
   border: none;
   color: #ffffff;
   margin-top: 30px;
+}
+.red-square {
+  width: 638px;
+  height: 405px;
+  border: solid 10px;
+  border-color: #ec1b2e;
+  background: #ffffff;
+  margin: 190px 190px 190px 420px;
+}
+.white-rectangle {
+width: 400px;
+height: 100px;
+border: none;
+margin: -30px 0px 30px 100px;
+text-align: center;
+background-color: #ffffff;
+
 }
