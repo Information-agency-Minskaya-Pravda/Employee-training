@@ -58,7 +58,7 @@ footer {
   align-items: flex-start;
   padding: 15px 30px;
   gap: 10px;
-  background: #ec1b2e;
+  background: #ff0015;
   color: aliceblue;
   font-weight: 500;
   margin: 0 auto;
@@ -117,7 +117,7 @@ footer {
   align-items: flex-start;
   padding: 15px 30px;
   gap: 10px;
-  background: #ec1b2e;
+  background: #ff0015;
   color: aliceblue;
   font-weight: 500;
   margin: 30px;
@@ -156,7 +156,7 @@ footer {
   align-items: flex-start;
   padding: 15px 30px;
   gap: 10px;
-  background: #ec1b2e;
+  background: #ff0015;
   color: aliceblue;
   font-weight: 500;
   margin: 30px;
@@ -201,7 +201,7 @@ footer {
   padding: 15px 30px;
   gap: 10px;
   position: absolute;
-  background: #ec1b2e;
+  background: #ff0015;
   font-family: "Circe";
   font-style: normal;
   font-weight: 700;
@@ -215,7 +215,7 @@ footer {
   width: 638px;
   height: 405px;
   border: solid 10px;
-  border-color: #ec1b2e;
+  border-color: #ff0015;
   background: #ffffff;
   margin: 190px 190px 190px 420px;
 }
@@ -239,4 +239,24 @@ background-color: #ffffff;
     .triangleinner {
       
 
+}
+.price-table{
+
+}
+.ulhr li{
+  display: inline-block;
+  margin-right: 162px;
+  margin-top: 52px;
+  color: #fff;
+  font-weight: 500;
+}
+  
+.ulhr-low li{
+  display: inline-block;
+  margin-right: 100px;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 700;
+  font-size: large; 
+  
 }
