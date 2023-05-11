@@ -234,15 +234,7 @@ background-color: #ffffff;
   border-width: 100px 50px 0 50px;
   height: 0;
   width: 0;
-}
 
-    .triangleinner {
-      
-
-}
-.price-table{
-
-}
 .ulhr li{
   display: inline-block;
   margin-right: 162px;
@@ -251,7 +243,7 @@ background-color: #ffffff;
   font-weight: 500;
 }
   
-.ulhr-low li{
+.ulhr-low li {
   display: inline-block;
   margin-right: 100px;
   margin-top: 15px;
