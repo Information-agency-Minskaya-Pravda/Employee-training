@@ -22,48 +22,49 @@
     />
 -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <!--NAV-->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-      <div class="container">
-        <a href="" class="navbar-brand">Employee Training</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarconntent"
-          aria-controls="navbacontent"
-          aria-expanded="false"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarcontent">
-          <ul class="ul navbar-nav mr-auto mb2">
-            <li class="hr">
-              <a href="" class="nav-link">link1</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">link2</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">link3</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">link4</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">link5</a>
-            </li>
-          </ul>
-          <form action="" class="d-flex"></form>
-          <input type="search" placeholder="Поиск" class="form-control mr-2" />
-          <button class="btn btn-outline-danger">Поиск</button>
-        </div>
-      </div>
-    </nav>
   </head>
   <!--HEAD end-->
   <body>
-    <div class="wrapper">
+    <header>
+      <!--NAV-->
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+          <a href="" class="navbar-brand">Employee Training</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarconntent"
+            aria-controls="navbacontent"
+            aria-expanded="false"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarcontent">
+            <ul class="ul navbar-nav mr-auto mb2">
+              <li class="hr">
+                <a href="" class="nav-link">link1</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">link2</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">link3</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">link4</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">link5</a>
+              </li>
+            </ul>
+            <form action="" class="d-flex"></form>
+            <input type="search" placeholder="Поиск" class="form-control mr-2" />
+            <button class="btn btn-outline-danger">Поиск</button>
+          </div>
+        </div>
+      </nav>
+    </header>
       <!-- main start-->
       <main>
         <!--Slider start-->
@@ -88,8 +89,7 @@
                 Подробнее
               </button>
             </div>
-            </div>
-        </div>
+          </div>
       </div>
       <div class="red-square">
         <div class="white-rectangle">
@@ -267,113 +267,75 @@
             </table>
           </div>
           <!--"Mid-block"-->
-          <div class="row mid-block-div">
-            <h2 class="mid-block-h2">Экзамены</h2>
-            <div
-              class="col text-start col-sm-3"
-              style="height: 585px; width: 306px"
-            >
-              <picture
-                ><img
-                  class="w-100"
-                  src="https://s0.rbk.ru/v6_top_pics/media/img/6/67/756484737186676.jpg"
-                  alt=""
-              /></picture>
-              <h3 class="mid-block-h3">
-                Massa fringilla rhoncus purus gravida magnis.
-              </h3>
-              <ul>
-                <li>Sed viverra in nulla duis elit purus urna.</li>
-                <li>
-                  Enim volutpat nisi, sit eget sed consectetur consectetur.
-                </li>
-                <li>
-                  Massa turpis enim, pellentesque amet morbi sagittis. Euismod
-                  morbi
-                </li>
-              </ul>
-              <button class="mid-block-button my-4">Подробнее</button>
+          <section class="py-3">
+            <h2 class="section__title">Экзамены</h2>
+            <div class="row">
+              <div class="col-3">
+                <div class="card">
+                  <picture class="card__img">
+                    <img src="https://s0.rbk.ru/v6_top_pics/media/img/6/67/756484737186676.jpg" alt="" />
+                  </picture>
+                  <div class="card__text px-3 mt-3">
+                    Sed viverra in nulla duis elit purus urna. 
+                    Enim volutpat nisi, sit eget sed consectetur consectetur. 
+                    Massa turpis enim, pellentesque amet morbi sagittis. Euismod morbi
+                  </div>
+                  <a href="#" class="card__button mx-auto mt-3">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <picture class="card__img">
+                    <img src="https://s0.rbk.ru/v6_top_pics/media/img/6/67/756484737186676.jpg" alt="" />
+                  </picture>
+                  <div class="card__text px-3 mt-3">
+                    Sed viverra in nulla duis elit purus urna. 
+                    Enim volutpat nisi, sit eget sed consectetur consectetur. 
+                    Massa turpis enim, pellentesque amet morbi sagittis. Euismod morbi
+                  </div>
+                  <a href="#" class="card__button mx-auto mt-3">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <picture class="card__img">
+                    <img src="https://s0.rbk.ru/v6_top_pics/media/img/6/67/756484737186676.jpg" alt="" />
+                  </picture>
+                  <div class="card__text px-3 mt-3">
+                    Sed viverra in nulla duis elit purus urna. 
+                    Enim volutpat nisi, sit eget sed consectetur consectetur. 
+                    Massa turpis enim, pellentesque amet morbi sagittis. Euismod morbi
+                  </div>
+                  <a href="#" class="card__button mx-auto mt-3">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <picture class="card__img">
+                    <img src="https://s0.rbk.ru/v6_top_pics/media/img/6/67/756484737186676.jpg" alt="" />
+                  </picture>
+                  <div class="card__text px-3 mt-3">
+                    Sed viverra in nulla duis elit purus urna. 
+                    Enim volutpat nisi, sit eget sed consectetur consectetur. 
+                    Massa turpis enim, pellentesque amet morbi sagittis. Euismod morbi
+                  </div>
+                  <a href="#" class="card__button mx-auto mt-3">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
             </div>
-            <div
-              class="col text-start col-sm-3"
-              style="height: 585px; width: 306px"
-            >
-              <picture
-                ><img
-                  class="w-100"
-                  src="https://s0.rbk.ru/v6_top_pics/media/img/6/67/756484737186676.jpg"
-                  alt=""
-              /></picture>
-              <h3 class="mid-block-h3">
-                Erat magna at elementum faucibus tristique lorem.
-              </h3>
-              <ul class="">
-                <li>Sed viverra in nulla duis elit purus urna.</li>
-                <li>
-                  Enim volutpat nisi, sit eget sed consectetur consectetur.
-                </li>
-                <li>
-                  Massa turpis enim, pellentesque amet morbi sagittis. Euismod
-                  morbi
-                </li>
-              </ul>
-              <button class="mid-block-button my-4">Подробнее</button>
-            </div>
-            <div
-              class="col text-start col-sm-3"
-              style="height: 585px; width: 306px"
-            >
-              <picture
-                ><img
-                  class="w-100"
-                  src="https://s0.rbk.ru/v6_top_pics/media/img/6/67/756484737186676.jpg"
-                  alt=""
-              /></picture>
-              <h3 class="mid-block-h3">
-                Libero at pulvinar sagittis odio et luctus mattis.
-              </h3>
-              <ul>
-                <li>Sed viverra in nulla duis elit purus urna.</li>
-                <li>
-                  Enim volutpat nisi, sit eget sed consectetur consectetur.
-                </li>
-                <li>
-                  Massa turpis enim, pellentesque amet morbi sagittis. Euismod
-                  morbi
-                </li>
-              </ul>
-              <button class="mid-block-button my-4">Подробнее</button>
-            </div>
-            <div
-              class="col text-start col-sm-3"
-              style="height: 585px; width: 306px"
-            >
-              <picture
-                ><img
-                  class="w-100"
-                  src="https://s0.rbk.ru/v6_top_pics/media/img/6/67/756484737186676.jpg"
-                  alt=""
-              /></picture>
-              <h3 class="mid-block-h3">
-                Laoreet ut aliquam rhoncus lectus. Faucibus.
-              </h3>
-              <ul>
-                <li>Sed viverra in nulla duis elit purus urna.</li>
-                <li>
-                  Enim volutpat nisi, sit eget sed consectetur consectetur.
-                </li>
-                <li>
-                  Massa turpis enim, pellentesque amet morbi sagittis. Euismod
-                  morbi
-                </li>
-              </ul>
-              <button class="mid-block-button my-4">Подробнее</button>
-            </div>
-          </div>
+          </section>
 
           <!--"Mid-block-lower"-->
           <div class="row mid-block-div">
-            <h2 class="mid-block-h2">Мероприятия</h2>
+            <h2 class="section__title ">Мероприятия</h2>
             <div
               class="col text-start col-sm-3"
               style="height: 539px; width: 436px"
@@ -536,7 +498,6 @@
         </div>
       </footer>
       <!--Footer end-->
-    </div>
     <!--Lib/JS-->
     <script
       type="text/javascript"
