@@ -64,7 +64,7 @@ footer {
   font-weight: 500;
   margin: 0 auto;
 }
-.mid-block-h3 {
+.section__title {
   font-family: "Circe";
   font-style: normal;
   font-weight: 700;
@@ -73,51 +73,19 @@ footer {
   /* or 34px */
 
   text-align: center;
-  margin: 20px;
+  margin: 70px;
 
   /* black */
 
   color: #333333;
 }
 
-.mid-block-h2 {
-  font-family: "Circe";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 48px;
-  line-height: 140%;
-  /* or 67px */
-
-  text-align: center;
-  letter-spacing: 0.01em;
-
-  /* black */
-
-  color: #333333;
-  margin: 80px;
-}
-.mid-low-block-h3 {
-  font-family: "Circe";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 140%;
-  /* or 34px */
-
-  text-align: start;
-  margin: 30px;
-
-  /* black */
-
-  color: #333333;
-}
 .mid-low-block-button {
   border: none;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 15px 30px;
-  gap: 10px;
   background: #ff0015;
   color: aliceblue;
   font-weight: 500;
