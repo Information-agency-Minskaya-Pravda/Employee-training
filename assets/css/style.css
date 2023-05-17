@@ -240,8 +240,8 @@ footer {
 .btn {
   position: absolute;
   position: absolute;
-  left: 80.97%;
-  right: 10%;
+  left: 85.97%;
+  right: 5%;
   top: 10%;
 }
 
@@ -254,14 +254,16 @@ footer {
   right: auto;
 }
 .navbar-info {
-  margin-right: 340px;
-  margin-top: 0px;
+  margin-right: 120px;
+  margin-left: 120px;
+  margin-top: 10px;
   font-size: medium;
   color: #ff0000;
+  font-weight: 500;
 }
 .navbar-nav {
-  margin-top: 150px;
-  
+  margin-top: 50px;
+    
 }
 
 .nav-link {
@@ -270,7 +272,7 @@ footer {
   position: static;
   margin-left: -840%;
   margin-right: 100px;
-  margin-top: 5%;
+  margin-top: 50%;
 }
 
 #navbar__contact {
