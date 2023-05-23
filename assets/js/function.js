@@ -31,14 +31,14 @@ $(".responsive").slick({
     ]
 });
 
-$(".one-time").slick({
-  dots: true,
+$(".main-slider").slick({
+  dots: false,
   arrows: true,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  adaptiveHeight: false
-  
-
+  adaptiveHeight: false,
+  prevArrow: '<button type="button" class="slick-prev slick-arrow" role="button" aria-label="Предыдущий" title="Предыдущий"><svg class="svg-icon"><use href="#arrow-left-short"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next slick-arrow" role="button" aria-label="Следующий" title="Следующий"><svg class="svg-icon"><use href="#arrow-right-short"></use></svg></button>',  
 });
   
