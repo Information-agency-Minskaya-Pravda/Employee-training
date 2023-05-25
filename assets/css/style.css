@@ -125,9 +125,6 @@ main {
   margin: 0;
   padding: 0;
 }
-footer {
-  flex: 0 0 auto;
-}
 .slider__slide {
   position: relative;
 }
@@ -423,6 +420,10 @@ footer {
   font-weight: 500;
   color: #f7f3f3;
   justify-content: center;
+}
+footer {
+  display: block;
+  justify-content: space-evenly;
 }
 .footer__list {
   font-weight: 500;
