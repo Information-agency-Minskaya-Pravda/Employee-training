@@ -154,6 +154,46 @@ main {
   font-size: 40px;
   line-height: 140%;
 }
+@media screen and (max-width: 1399px) {
+  .slide__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .slide__title {
+    font-size: 25px;
+  }
+  .slide__body {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slide__title {
+    font-size: 20px;
+  }
+  .slide__body {
+    width: 65%;
+  }
+  .slide__img img {
+    height: 550px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .slide__body{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .slide__img img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .slide__body {
+    width: 75%;
+  }
+}
 .slide__button {
   background: #ec1b2e;
   color: #fff;
