@@ -145,6 +145,26 @@ header {
   color: #333333;
   text-decoration: none;
 }
+ .breadcrumbs {
+  margin-left: 312px;
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+ }
+ .dot__breadcrumps {
+  border: #ff0000 solid;
+  size: 1rem;
+ }
+ .schedule__buttons {
+  background: #ec1b2e;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  text-decoration: none;
+  margin-right: 30px;
+ }
 
 main {
   min-height: 600px;
@@ -162,6 +182,15 @@ main {
   object-fit: cover;
   height: 700px;
 }
+.page__img img {
+  display: block;
+  position: relative;
+  width: 70%;
+  height: 500px;
+  object-fit: cover;
+  margin: 0 auto;  
+}
+
 .slide__body {
   position: absolute;
   top: 18%;
@@ -308,6 +337,26 @@ main {
   justify-content: center;
   margin-bottom: 75px;
 }
+
+ .schedule__main-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+  margin-left: 642px;
+  margin-right: 642px;
+ }
+ .levels__header{
+  text-align: left;
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;  
+ }
+ .schedule__list-decoration li::marker {
+  list-style-type: disc;
+  color: #ec1b2e;
+ }
 .mid-block-button {
   border: none;
   display: flex;
