@@ -339,11 +339,8 @@ main {
 }
 
  .schedule__main-section {
-  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 75px;
   
  }
  .levels__header{
