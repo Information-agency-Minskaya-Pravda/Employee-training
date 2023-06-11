@@ -649,3 +649,36 @@ footer {
   font-size: 14px;
   line-height: 140%;
 }
+.contacts__smaller-font {
+font-weight: 100;
+font-size: small;
+}
+.contacts__colored-font {
+  font-weight: 500;
+  color: #ec1b2e;
+}
+.contacts__bold-font {
+  font-weight: 700;
+  display: flex;
+  
+}
+.list__icon-contacts svg {
+  width: 15px;
+  height: 15px;
+  fill: #ec1b2e;
+  
+}
+.map__fill {
+    text-align: center;   
+}
+.colored__marker li {
+  list-style:disc;
+  
+}
+.colored__marker li::marker {
+  color: red
+
+}
+.list__icon-contacts {
+  margin-left: -1rem;
+}
