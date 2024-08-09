@@ -1,9 +1,59 @@
 button {
-    background-color: #ec1b2e;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 1rem;
-    padding: 0.7rem 1rem;
-  }
-  
+  background-color: #ec1b2e;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+}
+
+.header-text {
+  color: #ec1b2e;
+  font-weight: 600;
+}
+
+.header-info {
+  margin: 0 1.2em;
+}
+
+.header-info img {
+  margin-right: 1.4rem;
+}
+
+.header-info a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link {
+  --bs-nav-link-color: black;
+  --bs-nav-link-font-weight: 550;
+}
+
+.main-email a {
+  color: #ec1b2e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section-header {
+  font-size: 1.25rem;
+}
+
+main a {
+  color: black;
+  text-decoration: none;
+}
+
+.red-list {
+  list-style-type: square;
+
+}
+
+.red-list::marker {
+  color: #ec1b2e;
+}
+
+footer {
+  background-color: #c2c2c2;
+}

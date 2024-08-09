@@ -13,78 +13,146 @@
     <link rel="stylesheet" type="text/css" href="../assets/styles/style.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <p>
-          Школа испанского языка<br />
-          &laquo;Лавита&raquo; в Петербурге
-        </p>
+    <header class="container pt-3">
+      <div class="d-flex justify-content-between">
         <div>
-          <div>
-            <img src="../assets/images/geo.svg" alt="Geo" width="24" />
+          <p class="header-text">
+            Школа испанского языка<br />
+            &laquo;Лавита&raquo; в Петербурге
+          </p>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex header-info">
+            <img
+              src="../assets/images/geo.svg"
+              alt="Geo"
+              width="24"
+              height="24"
+            />
             <address>Лиговский пр. 133 Е</address>
           </div>
-          <div>
-            <img src="../assets/images/phone.svg" alt="Phone" width="24" />
-            <address><a href="tel:+79111234567">+7(911)123-45-67</a></address>
+          <div class="d-flex header-info">
+            <img
+              src="../assets/images/phone.svg"
+              alt="Phone"
+              width="24"
+              height="24"
+            />
+            <address><a href="tel:+79111234567">+7 (911) 123-45-67</a></address>
           </div>
-          <div>
-            <img src="../assets/images/email.svg" alt="Email" width="24" />
+          <div class="d-flex header-info">
+            <img
+              src="../assets/images/email.svg"
+              alt="Email"
+              width="24"
+              height="24"
+            />
             <address>
               <a href="lavita_school@gmail.com">lavita_school@gmail.com</a>
             </address>
           </div>
         </div>
-        <button>Запись на курсы</button>
-      </div>
-      <hr />
-      <div>
         <div>
+          <button>Запись на курсы</button>
+        </div>
+      </div>
+      <hr class="m-0" />
+      <nav class="d-flex justify-content-between navbar-expand-lg pt-0 pb-4">
+        <a class="navbar-brand" href="#">
           <img
             src="../assets/images/logo.png"
             alt="logo"
-            style="width: 60px; height: 60px"
+            width="60px"
+            height="60px"
           />
+        </a>
+        <div class="navbar-collapse">
+          <ul class="nav">
+            <a class="nav-link" href="#">О нас</a>
+            <a class="nav-link" href="#">Расписание и оплата</a>
+            <a class="nav-link" href="#">Мероприятия</a>
+            <a class="nav-link" href="#">Экзамены</a>
+            <a class="nav-link" href="#">Обучение в Испании</a>
+            <a class="nav-link" href="#">Новости</a>
+            <a class="nav-link" href="#">Фотогалерея</a>
+            <a class="nav-link" href="#">Контакты</a>
+            <a class="nav-link" href="#">Отзывы</a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="d-flex pb-3">
+        <p>
+          <a href="../index.html"> Главная </a>
+          <li class="red-list ps-3">Контакты</li>
+        </p>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d613.5348012171551!2d27.53595676498115!3d53.879612725218166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd1c17b73d70d%3A0x4de5fd38ef41d5ef!2z0KDQtdC00LDQutGG0LjRjyDRgNCw0LTQuNC-0YHRgtCw0L3RhtC40LggItCc0LjQvdGB0LrQsNGPINCy0L7Qu9C90LAiICjQnNCSLdGA0LDQtNC40L4p!5e1!3m2!1sru!2sby!4v1723127085750!5m2!1sru!2sby"
+          width="100%"
+          height="500rem"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="d-flex justify-content-between flew-wrap mt-5">
+        <div>
+          <h2 class="pb-4 section-header">Режим работы</h2>
+          <p>ПН-СБ - С 11:00 до 20:00</p>
+          <p>ВС. - НЕ РАБОЧИЙ ДЕНЬ</p>
         </div>
         <div>
-          <nav>
-            <ul>
-              <li><a>О нас</a></li>
-              <li><a>Расписание и оплата</a></li>
-              <li><a>Мероприятия</a></li>
-              <li><a>Экзамены</a></li>
-              <li><a>Обучение в Испании</a></li>
-              <li><a>Новости</a></li>
-              <li><a>Фотогалерея</a></li>
-              <li><a>Контакты</a></li>
-              <li><a>Отзывы</a></li>
-            </ul>
-          </nav>
+          <h2 class="pb-4 ps-2 ms-1 section-header">Расписание директора</h2>
+          <address>
+            <img
+              src="../assets/images/geo.svg"
+              alt="Geo"
+              width="24"
+              class="mx-1 px-1"
+            /><strong>Лиговский пр. 133 Е</strong>
+          </address>
+          <ul>
+            <li class="red-list">Вторник 14:00-17:00, 18:30-20:00</li>
+            <li class="red-list">Среда 14:00-20:00</li>
+            <li class="red-list">Четверг 14:00-20:00</li>
+            <li class="red-list">Пятница 15:00-17:00, 18:30-20:00</li>
+            <li class="red-list">Суббота 15:00-18:30</li>
+            <li class="red-list">Воскресенье - выходной день</li>
+          </ul>
+        </div>
+        <div class="main-phone">
+          <h2 class="pb-4 section-header">Телефоны</h2>
+          <address>
+            <a href="tel:+78121234567">+7 (812) 123-45-67</a>
+          </address>
+          <address>
+            <a href="tel:+79111234567">+7 (911) 123-45-67</a>
+          </address>
+        </div>
+        <div class="main-email">
+          <h2 class="pb-4 section-header">E-mail</h2>
+          <p>Основная почта</p>
+          <address>
+            <a href="mailto:lavita_school@gmail.com">LAVITA_SCHOOL@GMAIL.COM</a>
+          </address>
+          <p>Почта по вопросам экзаменов MSK</p>
+          <address>
+            <a href="mailto:lavita_msk@gmail.com">LAVITA_MSK@GMAIL.COM</a>
+          </address>
+          <p>Почта по вопросам экзаменов OPT</p>
+          <address>
+            <a href="mailto:lavita_opt@gmail.com">LAVITA_OPT@GMAIL.COM</a>
+          </address>
         </div>
       </div>
-    </header>
-    <main>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d613.5348012171551!2d27.53595676498115!3d53.879612725218166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd1c17b73d70d%3A0x4de5fd38ef41d5ef!2z0KDQtdC00LDQutGG0LjRjyDRgNCw0LTQuNC-0YHRgtCw0L3RhtC40LggItCc0LjQvdGB0LrQsNGPINCy0L7Qu9C90LAiICjQnNCSLdGA0LDQtNC40L4p!5e1!3m2!1sru!2sby!4v1723127085750!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div>
-        <h2>Режим работы</h2>
-      </div>
-      <div>
-        <h2>Расписание директора</h2>
-      </div>
-      <div>
-        <h2>Телефоны</h2>
-      </div>
-      <div>
-        <h2>E-mail</h2>
-        <p>Основная почта</p>
-        <address><a href="mailto:lavita_school@gmail.com">lavita_school@gmail.com</a></address>
-        <p>Почта по вопросам экзаменов MSK</p>
-        <address><a href="mailto:lavita_msk@gmail.com">lavita_msk@gmail.com</a></address>
-        <p>Почта по вопросам экзаменов OPT</p>
-        <address><a href="mailto:lavita_opt@gmail.com">lavita_opt@gmail.com</a></address>
-      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container"></div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
