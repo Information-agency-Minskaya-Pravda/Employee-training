@@ -25,9 +25,22 @@ a.no-style-link {
   text-decoration: none;
 }
 
+.navbar-expand {
+  padding-top: 1.25rem;
+  padding-bottom: 2.5rem;
+}
+
+.current-page {
+  padding-bottom: 2.5rem;
+}
+
 .nav-link {
   --bs-nav-link-color: black;
   --bs-nav-link-font-weight: 550;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
 }
 
 .main-email a {
@@ -47,6 +60,8 @@ main a {
 
 .red-list {
   list-style-type: square;
+  padding-bottom: 1.4rem;
+  padding-top: 0.1rem;
 }
 
 .red-list::marker {
