@@ -20,9 +20,9 @@ button {
   margin-right: 1.4rem;
 }
 
-.header-info a {
-    color: black;
-    text-decoration: none;
+a.no-style-link {
+  color: black;
+  text-decoration: none;
 }
 
 .nav-link {
@@ -47,7 +47,6 @@ main a {
 
 .red-list {
   list-style-type: square;
-
 }
 
 .red-list::marker {
@@ -55,5 +54,37 @@ main a {
 }
 
 footer {
-  background-color: #c2c2c2;
+  background-color: #f3f3f3;
+  margin-top: 7.5rem;
+}
+
+footer .site-info {
+  opacity: 0.5;
+}
+
+footer h6 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1.56rem;
+}
+
+footer .footer-row {
+  padding: 3.78rem 0;
+}
+
+footer :is(address, p) {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.fixed-col {
+  width: 12.5rem;
+}
+
+footer img {
+  margin-right: 1.25rem;
+}
+
+.sn-links {
+  margin-top: 2.5rem;
 }
