@@ -5,6 +5,7 @@
 
 # Base
 	- Header
+    - Common
     - Header top
     - Header bottom
 # Componets
@@ -24,6 +25,22 @@ body {
   header {
     padding: 1rem 0rem;
   }
+    /* Common */
+    .top__contacts > * > a::after,
+    .bottom__menu > ul a::after {
+      content: "";
+      display: block;
+      background-color: #333;
+      height: 1px;
+      width: 0%;
+      -webkit-transition: width .3s ease-in-out;
+      -moz--transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out;
+    }
+    .top__contacts > * > a:hover::after,
+    .bottom__menu > ul a:hover::after {
+      width: 100%;
+    }
     /* Header top*/
     .header__top {
       display: grid;
@@ -63,23 +80,38 @@ body {
       color: #333;
       text-decoration: none;
     }
-    .top__contacts > * > a::after {
-      content: "";
-      display: block;
-      background-color: #333;
-      height: 1px;
-      width: 0%;
-      -webkit-transition: width .3s ease-in-out;
-      -moz--transition: width .3s ease-in-out;
-      transition: width .3s ease-in-out;
-    }
-    .top__contacts > * > a:hover::after {
-      width: 100%;
-    }
     .top__button {
       grid-area: button;
       display: flex;
       justify-content: flex-end;
+    }
+    /* Header bottom */
+    .header__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding-top: 1rem;
+    }
+    .bottom__logo > svg {
+      width: 3.75rem;
+      height: 3.75rem;
+      fill:#ec1b2e;
+    }
+    .bottom__menu > ul {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .bottom__menu > ul a {
+      color: #333;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: uppercase;
     }
 /* # Components */ 
     /* Site button */
