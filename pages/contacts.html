@@ -11,93 +11,100 @@
   <body>
     <header>
       <div class="container">
-        <div class="header__top">
-          <div class="top__site-name">
-            Школа испанского языка
-            &laquo;Лавита&raquo; в Петербурге
+        <div class="row">
+          <div class="header__top">
+            <div class="top__site-name">
+              Школа испанского языка
+              &laquo;Лавита&raquo; в Петербурге
+            </div>
+            <address class="top__contacts d-flex d-sm-none d-xxl-flex">
+              <div class="contact__address">
+                <svg>
+                  <use href="#location-icon"></use>
+                </svg>
+                <a href="#">
+                  Лиговский пр. 133 Е
+                </a>
+              </div>
+              <div class="contact__phone">
+                <svg>
+                  <use href="#phone-icon"></use>
+                </svg>
+                <a href="tel:+79111234567">
+                  +7 (911) 123-45-67
+                </a>
+              </div>
+              <div class="contact__email">
+                <svg>
+                  <use href="#email-icon"></use>
+                </svg>
+                <a href="mailto:lavita_school@gmail.com">
+                  lavita_school@gmail.com
+                </a>
+              </div>
+            </address>
+            <div class="top__button">
+              <a href="#" class="site-button">
+                Запись на курсы
+              </a>
+            </div>
           </div>
-          <address class="top__contacts">
-            <div class="contact__address">
+          <div class="header__bottom">
+            <a class="bottom__logo" href="#">
               <svg>
-                <use href="#location-icon"></use>
+                <use href="#logo"></use>
               </svg>
-              <a href="#">
-                Лиговский пр. 133 Е
-              </a>
-            </div>
-            <div class="contact__phone">
+            </a>
+            <nav class="bottom__menu d-none d-xxl-block">
+              <ul>
+                <li>
+                  <a href="">
+                    О нас
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Расписание занятий
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Мероприятия
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Экзамены
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Обучение в Испании
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Новости
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Фотогалерея
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a class="bottom__menu-icon d-block d-xxl-none">
               <svg>
-                <use href="#phone-icon"></use>
+                <use href="#menu-icon"></use>
               </svg>
-              <a href="tel:+79111234567">
-                +7 (911) 123-45-67
-              </a>
-            </div>
-            <div class="contact__email">
-              <svg>
-                <use href="#email-icon"></use>
-              </svg>
-              <a href="mailto:lavita_school@gmail.com">
-                lavita_school@gmail.com
-              </a>
-            </div>
-          </address>
-          <div class="top__button">
-            <a href="#" class="site-button">
-              Запись на курсы
             </a>
           </div>
-        </div>
-        <div class="header__bottom">
-          <a class="bottom__logo" href="#">
-            <svg>
-              <use href="#logo"></use>
-            </svg>
-          </a>
-          <nav class="bottom__menu">
-            <ul>
-              <li>
-                <a href="">
-                  О нас
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Расписание занятий
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Мероприятия
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Экзамены
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Обучение в Испании
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Новости
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Фотогалерея
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Контакты
-                </a>
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
     </header>
@@ -304,7 +311,9 @@
         <symbol id="location-icon" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg">
           <path d="M7 18C5.73694 16.9226 4.56619 15.7415 3.5 14.469C1.9 12.558 8.78894e-07 9.71197 8.78894e-07 6.99997C-0.00069302 5.61493 0.409509 4.26082 1.17869 3.109C1.94788 1.95718 3.04147 1.05943 4.32107 0.529368C5.60067 -0.000693321 7.00875 -0.13924 8.36712 0.131262C9.72548 0.401763 10.9731 1.06915 11.952 2.04897C12.6038 2.69783 13.1203 3.46951 13.4719 4.31934C13.8234 5.16918 14.0029 6.0803 14 6.99997C14 9.71197 12.1 12.558 10.5 14.469C9.4338 15.7415 8.26306 16.9226 7 18ZM7 3.99997C6.20435 3.99997 5.44129 4.31604 4.87868 4.87865C4.31607 5.44126 4 6.20432 4 6.99997C4 7.79562 4.31607 8.55868 4.87868 9.12129C5.44129 9.6839 6.20435 9.99997 7 9.99997C7.79565 9.99997 8.55871 9.6839 9.12132 9.12129C9.68393 8.55868 10 7.79562 10 6.99997C10 6.20432 9.68393 5.44126 9.12132 4.87865C8.55871 4.31604 7.79565 3.99997 7 3.99997Z"/>
         </symbol>
-          
+        <symbol id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </symbol>
       </svg>
     </div>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>

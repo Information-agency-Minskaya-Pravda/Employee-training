@@ -84,6 +84,28 @@ body {
       grid-area: button;
       display: flex;
       justify-content: flex-end;
+      align-items: center;
+    }
+    @media screen and (max-width: 767px) {
+      .header__top {
+        grid-template-areas: "title button";
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media screen and (max-width: 575px) {
+      .header__top {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+      .top__site-name {
+        text-align: center;
+      }
+      .top__contacts {
+        flex-direction: column;
+        gap: 1rem;
+      }
     }
     /* Header bottom */
     .header__bottom {
@@ -113,6 +135,11 @@ body {
       text-decoration: none;
       text-transform: uppercase;
     }
+    .bottom__menu-icon > svg {
+      width: 3rem;
+      height: 3rem;
+      fill: #ec1b2e;
+    }
 /* # Components */ 
     /* Site button */
     .site-button {
@@ -122,6 +149,7 @@ body {
       padding: 0.625rem 1.25rem;
       font-weight: 500;
       line-height: 1.75;
+      height: fit-content;
     }
     .site-button:hover {
       background: rgba(236, 27, 44, 0.6);
