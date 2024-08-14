@@ -4,8 +4,15 @@
 # Generic
 
 # Base
+  -Common
 	- Header
+    - Header top
+    - Header bottom
+  - Main
     - Common
+    - Breadcrump
+    - Content
+  - Footer
     - Header top
     - Header bottom
 # Componets
@@ -21,26 +28,34 @@ body {
 body {
   font-family: "Circe";
 }
+  /* Common */
+  
+  .top__contacts > * > a::after,
+  .bottom__menu > ul a::after,
+  .breadcrumb > ul a::after,
+  .main__content a::after,
+  .links__contacts a:after {
+    content: "";
+    display: block;
+    background-color: #333;
+    height: 1px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+  }
+
+  .top__contacts > * > a:hover::after,
+  .bottom__menu > ul a:hover::after,
+  .breadcrumb > ul a:hover::after,
+  .main__content a:hover::after,
+  .links__contacts a:hover::after {
+    width: 100%;
+  }
   /* Header */
   header {
     padding: 1rem 0rem;
   }
-    /* Common */
-    .top__contacts > * > a::after,
-    .bottom__menu > ul a::after {
-      content: "";
-      display: block;
-      background-color: #333;
-      height: 1px;
-      width: 0%;
-      -webkit-transition: width .3s ease-in-out;
-      -moz--transition: width .3s ease-in-out;
-      transition: width .3s ease-in-out;
-    }
-    .top__contacts > * > a:hover::after,
-    .bottom__menu > ul a:hover::after {
-      width: 100%;
-    }
     /* Header top*/
     .header__top {
       display: grid;
@@ -140,6 +155,160 @@ body {
       height: 3rem;
       fill: #ec1b2e;
     }
+  
+  /* Main */
+    /* Common */    
+    .breadcrumb li:not(:first-child),
+    .content__director-schedule li {
+      list-style-type: square;
+    }
+    .breadcrumb li:not(:first-child)::marker,
+    .content__director-schedule li::marker {
+      color: #ec1b2e;
+      font-size: 1.2rem
+    }
+    /* Breadcrump */
+    .breadcrumb {
+      padding: 1.5rem 0 2.5rem 0;
+    }
+    .breadcrumb ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      align-items: center;
+      gap: 1.8rem;
+      margin: 0;
+      padding: 0;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #333;
+    }
+    .breadcrumb a {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #333;
+      text-decoration: none;
+    }
+    /* Content */
+    .main__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 3.75rem;     
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .main__content h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .main__content a {
+      color: #333;
+      text-decoration: none;
+      font-style: normal;
+    }
+    .content__operation-mode > p {
+      text-transform: uppercase;
+    }
+    .content__director-schedule > address > a{
+      font-weight: 700;
+      padding-left: 0.5rem;
+    }
+    .content__director-schedule svg {
+      width: 0.875rem;
+      height: 1.125rem;
+      fill: #ec1b2e;
+    }
+    .content__director-schedule > ul {
+      padding-inline-start: 1.4rem;
+    }
+    .content__director-schedule > ul > li:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    .content__emails address{
+      color: #333;
+      text-decoration: none;
+      font-style: normal;
+    }
+    .content__emails a{
+      color: #ec1b2e;
+      font-weight: 700;
+    }
+
+  /* Footer */ 
+    footer {
+      margin-top: 7.5rem;
+      background-color: rgba(51, 51, 51, 0.05);
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    /* Footer top*/
+    .footer__top {
+      display: grid;
+      grid-template-areas: "links about schedule-and-study exams school";
+      grid-template-columns: repeat(5, 1fr);
+      gap: 4.313rem;
+      border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+      padding: 3.75rem 0;
+    }
+    .footer__top h4 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 0;
+    }
+    .top__links > h4{
+      font-size: 1rem;
+      max-width: 250px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .links__contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+    .links__contacts a {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #333;
+      font-style: normal;
+    }
+    .links__contacts svg {
+      width: 1.125rem;
+      height: 1.125rem;
+      margin-right: 0.8rem;
+      fill: #ec1b2e;
+    }
+    .links__address, .links__phone, .links_email {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .links__social-media {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      padding-top: 2.5rem;
+    }
+    .links__social-media svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .footer__study {
+      padding-top: 1.5rem;
+    }
+    /* Footer bottom*/
+    .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer__bottom p {
+      opacity: 0.5;
+    }
+
 /* # Components */ 
     /* Site button */
     .site-button {
@@ -154,113 +323,3 @@ body {
     .site-button:hover {
       background: rgba(236, 27, 44, 0.6);
     }
-
-
-
-
-button {
-  background-color: #ec1b2e;
-  border: none;
-  color: white;
-  text-align: center;
-  font-size: 1rem;
-  padding: 0.7rem 1rem;
-}
-
-.header-text {
-  color: #ec1b2e;
-  font-weight: 600;
-}
-
-.header-info {
-  margin: 0 1.2em;
-}
-
-.header-info img {
-  margin-right: 1.4rem;
-}
-
-a.no-style-link {
-  color: black;
-  text-decoration: none;
-}
-
-.navbar-expand {
-  padding-top: 1.25rem;
-  padding-bottom: 2.5rem;
-}
-
-.current-page {
-  padding-bottom: 2.5rem;
-}
-
-.nav-link {
-  --bs-nav-link-color: black;
-  --bs-nav-link-font-weight: 550;
-}
-
-.navbar-collapse {
-  flex-grow: 0;
-}
-
-.main-email a {
-  color: #ec1b2e;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.section-header {
-  font-size: 1.25rem;
-}
-
-.red-list {
-  list-style-type: square;
-  padding-bottom: 1.4rem;
-  padding-top: 0.1rem;
-}
-
-.red-list::marker {
-  color: #ec1b2e;
-}
-
-footer {
-  background-color: #f3f3f3;
-  margin-top: 7.5rem;
-}
-
-footer .site-info {
-  opacity: 0.5;
-}
-
-footer h6 {
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin-bottom: 1.56rem;
-}
-
-.footer-row {
-  padding: 3.78rem 0;
-}
-
-footer :is(address, p) {
-  font-weight: 400;
-  font-size: 0.8rem;
-}
-
-.fixed-col {
-  width: 12.5rem;
-}
-
-footer img {
-  margin-right: 1.25rem;
-}
-
-.sn-links {
-  margin-top: 2.5rem;
-}
-
-.red-par {
-  border-color: #ec1b2e;
-  border-width: 0.35rem;
-  border-style: solid;
-}
