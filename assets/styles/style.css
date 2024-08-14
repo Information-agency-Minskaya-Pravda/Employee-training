@@ -1,3 +1,103 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+
+# Base
+	- Header
+    - Header top
+    - Header bottom
+# Componets
+  - Site button
+*/
+
+/* # Base */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Circe";
+}
+  /* Header */
+  header {
+    padding: 1rem 0rem;
+  }
+    /* Header top*/
+    .header__top {
+      display: grid;
+      grid-template-areas: "title contacts button";
+      grid-template-columns: 1fr 2fr 1fr;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+    }
+    .top__site-name {
+      grid-area: title;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color:#ec1b2e;
+      max-width: 250px;
+    }
+    .top__contacts {
+      grid-area: contacts;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      font-style: normal;
+    }
+    .top__contacts > * {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .top__contacts > * > svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: #ec1b2e;
+    }
+    .top__contacts > * > a {
+      font-size: 1rem;
+      color: #333;
+      text-decoration: none;
+    }
+    .top__contacts > * > a::after {
+      content: "";
+      display: block;
+      background-color: #333;
+      height: 1px;
+      width: 0%;
+      -webkit-transition: width .3s ease-in-out;
+      -moz--transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out;
+    }
+    .top__contacts > * > a:hover::after {
+      width: 100%;
+    }
+    .top__button {
+      grid-area: button;
+      display: flex;
+      justify-content: flex-end;
+    }
+/* # Components */ 
+    /* Site button */
+    .site-button {
+      background: #ec1b2e;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.625rem 1.25rem;
+      font-weight: 500;
+      line-height: 1.75;
+    }
+    .site-button:hover {
+      background: rgba(236, 27, 44, 0.6);
+    }
+
+
+
+
 button {
   background-color: #ec1b2e;
   border: none;
