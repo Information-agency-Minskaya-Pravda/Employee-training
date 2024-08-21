@@ -10,7 +10,7 @@
     - Header bottom
   - Main
     - Common
-    - Breadcrump
+    - Breadcrumbs
     - Content
     - Article
   - Footer
@@ -30,11 +30,10 @@ body {
   font-family: "Circe";
 }
 /* Common */
-
 .top__contacts > * > a::after,
 .bottom__menu > ul a::after,
-.breadcrumb > ul a::after,
-.main__content a::after,
+.breadcrumbs a::after,
+.contacts a::after,
 .links__contacts a:after {
   content: "";
   display: block;
@@ -48,8 +47,8 @@ body {
 
 .top__contacts > * > a:hover::after,
 .bottom__menu > ul a:hover::after,
-.breadcrumb > ul a:hover::after,
-.main__content a:hover::after,
+.breadcrumbs a:hover::after,
+.contacts a:hover::after,
 .links__contacts a:hover::after {
   width: 100%;
 }
@@ -159,32 +158,23 @@ header {
 
 /* Main */
 /* Common */
-.breadcrumb li:not(:first-child),
-.content__director-schedule li,
+.breadcrumbs span:not(:first-child),
+.contacts__director-schedule li,
 article li {
   list-style-type: square;
 }
-.breadcrumb li:not(:first-child)::marker,
-.content__director-schedule li::marker,
+.breadcrumbs span:not(:first-child)::marker,
+.contacts__director-schedule li::marker,
 article li::marker {
   color: #ec1b2e;
   font-size: 1.2rem;
 }
-/* Breadcrump */
-.breadcrumb {
+/* Breadcrumbs */
+.breadcrumbs {
   padding: 1.5rem 0 2.5rem 0;
-}
-.breadcrumb ul {
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+  gap: 1rem;
   align-items: center;
-  gap: 1.8rem;
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #333;
 }
 .breadcrumb a {
   font-size: 1rem;
@@ -192,8 +182,8 @@ article li::marker {
   color: #333;
   text-decoration: none;
 }
-/* Content */
-.main__content {
+/* Contacts */
+.contacts {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -201,41 +191,71 @@ article li::marker {
   font-size: 1rem;
   font-weight: 400;
 }
-.main__content h3 {
+.contacts h3 {
   font-size: 1.5rem;
   font-weight: 700;
 }
-.main__content a {
+.contacts a {
   color: #333;
   text-decoration: none;
   font-style: normal;
 }
-.content__operation-mode > p {
+.contacts__operation-mode > p {
   text-transform: uppercase;
 }
-.content__director-schedule > address > a {
+.contacts__director-schedule {
+  grid-area: director;
+}
+.contacts__director-schedule > address > a {
+  display: inline-block;
   font-weight: 700;
   padding-left: 0.5rem;
 }
-.content__director-schedule svg {
+.contacts__director-schedule svg {
   width: 0.875rem;
   height: 1.125rem;
   fill: #ec1b2e;
 }
-.content__director-schedule > ul {
+.contacts__director-schedule > ul {
   padding-inline-start: 1.4rem;
 }
-.content__director-schedule > ul > li:not(:last-child) {
+.contacts__director-schedule > ul > li:not(:last-child) {
   margin-bottom: 1rem;
 }
-.content__emails address {
+.contacts__phones {
+  grid-area: phones;
+}
+.contacts__emails address {
   color: #333;
   text-decoration: none;
   font-style: normal;
 }
-.content__emails a {
+.contacts__emails a {
+  display: inline-block;
   color: #ec1b2e;
   font-weight: 700;
+  width: fit-content;
+}
+.contacts__map {
+  max-width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .contacts {
+    display: grid;
+    grid-template-areas: "worktime phones" "director emails";
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts__map {
+    max-width: 300px;
+  }
 }
 /* Article */
 .main__article {
@@ -310,96 +330,96 @@ footer {
   font-size: 1rem;
   font-weight: 400;
 }
-/* Footer top*/
-.footer__top {
-  display: flex;
-  flex-wrap: wrap;
-  grid-template-areas: "links about schedule-and-study exams school";
-  grid-template-columns: repeat(5, 1fr);
-  gap: 3.5rem;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.3);
-  padding: 3.75rem 0;
-}
-.footer__top h4 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-top: 0;
-}
-.top__links > h4 {
-  font-size: 1rem;
-  max-width: 250px;
-  text-transform: uppercase;
-  text-align: center;
-}
-.links__contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-.links__contacts a {
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #333;
-  font-style: normal;
-}
-.links__contacts svg {
-  width: 1.125rem;
-  height: 1.125rem;
-  margin-right: 0.8rem;
-  fill: #ec1b2e;
-}
-.links__address,
-.links__phone,
-.links_email {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-.links__social-media {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-  padding-top: 2.5rem;
-}
-.links__social-media svg {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-.footer__study {
-  padding-top: 1.5rem;
-}
-@media screen and (max-width: 1400px) {
+  /* Footer top*/
   .footer__top {
+    display: flex; /* grid */
+    flex-wrap: wrap;
+    grid-template-areas: "links about schedule-and-study exams school";
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3.5rem;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+    padding: 3.75rem 0;
+  }
+  .footer__top h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 0;
+  }
+  .top__links > h4 {
+    font-size: 1rem;
+    max-width: 250px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .links__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .links__contacts a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    font-style: normal;
+  }
+  .links__contacts svg {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.8rem;
+    fill: #ec1b2e;
+  }
+  .links__address,
+  .links__phone,
+  .links_email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .links__social-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 2.5rem;
+  }
+  .links__social-media svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .footer__study {
+    padding-top: 1.5rem;
+  }
+  @media screen and (max-width: 1400px) {
+    .footer__top {
+      justify-content: space-between;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .footer__top {
+    }
+  }
+  /* Footer bottom*/
+  .footer__bottom {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
   }
-}
-@media screen and (max-width: 576px) {
-  .footer__top {
+  .footer__bottom p {
+    opacity: 0.5;
   }
-}
-/* Footer bottom*/
-.footer__bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer__bottom p {
-  opacity: 0.5;
-}
 
 /* # Components */
-/* Site button */
-.site-button {
-  background: #ec1b2e;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.625rem 1.25rem;
-  font-weight: 500;
-  line-height: 1.75;
-  height: fit-content;
-}
-.site-button:hover {
-  background: rgba(236, 27, 44, 0.6);
-}
+  /* Site button */
+  .site-button {
+    background: #ec1b2e;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.625rem 1.25rem;
+    font-weight: 500;
+    line-height: 1.75;
+    height: fit-content;
+  }
+  .site-button:hover {
+    background: rgba(236, 27, 44, 0.6);
+  }

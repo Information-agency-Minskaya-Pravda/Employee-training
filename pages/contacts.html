@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Контакты</title>
     <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/fonts.css" />
@@ -10,8 +10,7 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="row">
+      <!-- <div class="container"> -->
           <div class="header__top">
             <div class="top__site-name">
               Школа испанского языка &laquo;Лавита&raquo; в Петербурге
@@ -82,18 +81,18 @@
               </svg>
             </a>
           </div>
-        </div>
-      </div>
+      <!-- </div> -->
     </header>
     <main>
-      <div class="container">
-        <nav class="breadcrumb">
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li>Контакты</li>
-          </ul>
+      <!-- <div class="container"> -->
+        <nav class="breadcrumbs">
+          <span>
+            <a href="">Главная</a>
+          </span>
+          <span> / </span>
+          <span>Контакты</span>
         </nav>
-        <iframe
+        <iframe class="contacts__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d613.5348012171551!2d27.53595676498115!3d53.879612725218166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd1c17b73d70d%3A0x4de5fd38ef41d5ef!2z0KDQtdC00LDQutGG0LjRjyDRgNCw0LTQuNC-0YHRgtCw0L3RhtC40LggItCc0LjQvdGB0LrQsNGPINCy0L7Qu9C90LAiICjQnNCSLdGA0LDQtNC40L4p!5e1!3m2!1sru!2sby!4v1723127085750!5m2!1sru!2sby"
           width="100%"
           height="500rem"
@@ -102,19 +101,21 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <div class="main__content">
-          <div class="content__operation-mode">
+        <div class="contacts">
+          <div class="cotacts__operation-mode">
             <h3>Режим работы</h3>
             <p>Пн-Сб - С 11:00 до 20:00</p>
             <p>Вм. - Не рабочий день</p>
           </div>
-          <div class="content__director-schedule">
+          <div class="contacts__director-schedule">
             <h3>Расписание директора</h3>
             <address>
               <svg>
                 <use href="#location-icon"></use>
               </svg>
-              <a href="#"> Лиговский пр. 133 Е </a>
+              <a href="#">
+                Лиговский пр. 133 Е
+              </a>
             </address>
             <ul>
               <li>Вторник 14:00-17:00, 18:30-20:00</li>
@@ -125,20 +126,18 @@
               <li>Воскресенье - выходной день</li>
             </ul>
           </div>
-          <div class="content__phones">
+          <div class="contacts__phones">
             <h3>Телефоны</h3>
             <address>
               <p><a href="tel:+78121234567">+7 (812) 123-45-67</a></p>
               <p><a href="tel:+79111234567">+7 (911) 123-45-67</a></p>
             </address>
           </div>
-          <div class="content__emails">
+          <div class="contacts__emails">
             <h3>E-mail</h3>
             <p>Основная почта</p>
             <address>
-              <a href="mailto:lavita_school@gmail.com"
-                >LAVITA_SCHOOL@GMAIL.COM</a
-              >
+              <a href="mailto:lavita_school@gmail.com">LAVITA_SCHOOL@GMAIL.COM</a>
               <p>Почта по вопросам экзаменов MSK</p>
               <a href="mailto:lavita_msk@gmail.com">LAVITA_MSK@GMAIL.COM</a>
               <p>Почта по вопросам экзаменов OPT</p>
@@ -149,10 +148,9 @@
       </div>
     </main>
     <footer>
-      <div class="container">
-        <div class="row">
+      <!-- <div class="container"> -->
           <div class="footer__top">
-            <div class="top__links col-lg-2">
+            <div class="top__links">
               <h4>
                 Школа китайского языка &laquo;Конфуций&raquo; в Петербурге
               </h4>
@@ -177,21 +175,13 @@
                 </div>
               </address>
               <div class="links__social-media">
-                <a href="#"
-                  ><svg><use href="#vk-icon"></use></svg
-                ></a>
-                <a href="#">
-                  <svg><use href="#youtube-icon"></use></svg
-                ></a>
-                <a href="#"
-                  ><svg><use href="#telegram-icon"></use></svg
-                ></a>
-                <a href="#"
-                  ><svg><use href="#wechat-icon"></use></svg
-                ></a>
+                <a href="#"><svg><use href="#vk-icon"></use></svg></a>
+                <a href="#"><svg><use href="#youtube-icon"></use></svg></a>
+                <a href="#"><svg><use href="#telegram-icon"></use></svg></a>
+                <a href="#"><svg><use href="#wechat-icon"></use></svg></a>
               </div>
             </div>
-            <div class="footer__about col-12 col-md-5 col-lg-2">
+            <div class="footer__about">
               <h4>О нас</h4>
               <p>Основные сведения</p>
               <p>Структура и органы управления образовательной организацией</p>
@@ -205,7 +195,7 @@
               </p>
               <p>Доступная среда</p>
             </div>
-            <div class="footer__schedule-and-study col-12 col-md-5 col-lg-2">
+            <div class="footer__schedule-and-study">
               <div class="footer__schedule">
                 <h4>Расписание и оплата</h4>
                 <p>Расписание занятий</p>
@@ -219,7 +209,7 @@
                 <p>Оформление визы на обучение</p>
               </div>
             </div>
-            <div class="footer__exams col-12 col-md-5 col-lg-2">
+            <div class="footer__exams">
               <h4>Экзамены</h4>
               <p>MSK 1</p>
               <p>OPT</p>
@@ -229,7 +219,7 @@
               <p>Порядок регистрации на очный экзамен</p>
               <p>Расписание экзаменов</p>
             </div>
-            <div class="footer__school col-12 col-md-5 col-lg-2">
+            <div class="footer__school">
               <h4>Школа</h4>
               <p>Новости</p>
               <p>Мероприятия</p>
@@ -242,8 +232,7 @@
             <p>&copy; &laquo;ЛАВИТА&raquo; 2021</p>
             <p>Разработано d-e-n.ru</p>
           </div>
-        </div>
-      </div>
+      <!-- </div> -->
     </footer>
     <div class="svgs d-none">
       <svg>
@@ -301,19 +290,11 @@
           viewBox="0 0 30 30"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_10426_373)">
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M26.7031 18.4471C26.7031 18.4471 29.1286 20.8426 29.7286 21.9511C29.7403 21.9671 29.7494 21.9848 29.7556 22.0036C30.0001 22.4131 30.0601 22.7341 29.9401 22.9711C29.7376 23.3626 29.0521 23.5591 28.8196 23.5756H24.5326C24.2341 23.5756 23.6131 23.4976 22.8571 22.9756C22.2796 22.5721 21.7051 21.9076 21.1486 21.2581C20.3176 20.2936 19.5991 19.4566 18.8716 19.4566C18.7798 19.4564 18.6885 19.4716 18.6016 19.5016C18.0511 19.6756 17.3521 20.4601 17.3521 22.5496C17.3521 23.2036 16.8361 23.5756 16.4746 23.5756H14.5111C13.8421 23.5756 10.3591 23.3416 7.27064 20.0851C3.48614 16.0981 0.0871351 8.10006 0.0541351 8.02956C-0.157365 7.51206 0.286635 7.23006 0.766635 7.23006H5.09564C5.67614 7.23006 5.86514 7.58106 5.99714 7.89606C6.15014 8.25756 6.71714 9.70356 7.64714 11.3281C9.15314 13.9711 10.0786 15.0466 10.8181 15.0466C10.9571 15.047 11.0937 15.0108 11.2141 14.9416C12.1801 14.4106 12.0001 10.9606 11.9551 10.2496C11.9551 10.1116 11.9536 8.70906 11.4586 8.03106C11.1046 7.54506 10.5016 7.35606 10.1371 7.28706C10.2346 7.14606 10.4416 6.93006 10.7071 6.80256C11.3686 6.47256 12.5641 6.42456 13.7506 6.42456H14.4091C15.6961 6.44256 16.0291 6.52506 16.4971 6.64356C17.4391 6.86856 17.4571 7.47906 17.3746 9.55806C17.3506 10.1521 17.3251 10.8211 17.3251 11.6086C17.3251 11.7766 17.3176 11.9641 17.3176 12.1546C17.2891 13.2211 17.2516 14.4226 18.0046 14.9161C18.1023 14.9769 18.2151 15.0091 18.3301 15.0091C18.5911 15.0091 19.3726 15.0091 21.4921 11.3716C22.4221 9.76506 23.1421 7.87056 23.1916 7.72806C23.2336 7.64856 23.3596 7.42506 23.5126 7.33506C23.6215 7.27715 23.7434 7.24823 23.8666 7.25106H28.9591C29.5141 7.25106 29.8906 7.33506 29.9641 7.54506C30.0871 7.88556 29.9401 8.92506 27.6151 12.0691C27.2236 12.5926 26.8801 13.0456 26.5786 13.4416C24.4711 16.2076 24.4711 16.3471 26.7031 18.4471Z"
-              fill="#EC1B2E"
             />
-          </g>
-          <defs>
-            <clipPath id="clip0_10426_373">
-              <rect width="30" height="30" fill="white" />
-            </clipPath>
-          </defs>
         </symbol>
 
         <symbol
@@ -321,17 +302,9 @@
           viewBox="0 0 30 30"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_10426_375)">
             <path
               d="M29.3748 8.13385C29.2049 7.52788 28.874 6.97928 28.4173 6.54634C27.9477 6.1001 27.372 5.78089 26.7448 5.61884C24.3973 5.00009 14.9923 5.0001 14.9923 5.0001C11.0715 4.95549 7.15158 5.15169 3.2548 5.58759C2.62753 5.76161 2.053 6.08795 1.58229 6.5376C1.11979 6.9826 0.784795 7.53135 0.609795 8.1326C0.189411 10.3973 -0.0148401 12.6968 -0.000205083 15.0001C-0.0152051 17.3013 0.188545 19.6001 0.609795 21.8676C0.781045 22.4663 1.11479 23.0126 1.57854 23.4538C2.04229 23.8951 2.6198 24.2138 3.2548 24.3826C5.63354 25.0001 14.9923 25.0001 14.9923 25.0001C18.9181 25.0448 22.843 24.8486 26.7448 24.4126C27.372 24.2506 27.9477 23.9313 28.4173 23.4851C28.8739 23.0522 29.2044 22.5036 29.3735 21.8976C29.8049 19.6338 30.0146 17.3333 29.9998 15.0288C30.0322 12.7146 29.8228 10.4033 29.3748 8.1326V8.13385ZM12.0023 19.2801V10.7213L19.8273 15.0013L12.0023 19.2801Z"
-              fill="#333333"
             />
-          </g>
-          <defs>
-            <clipPath id="clip0_10426_375">
-              <rect width="30" height="30" fill="white" />
-            </clipPath>
-          </defs>
         </symbol>
         <symbol
           id="telegram-icon"
